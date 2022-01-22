@@ -16,7 +16,7 @@ const OurServices = () => {
     useEffect(() => {
 
         //get the data from links from homePage
-        fetch("http://localhost:6600/api/card")
+        fetch("https://beauti-saloon.herokuapp.com/services")
             .then(res => res.json())
             .then((data)=>{
                 // if link was empty fetch nail by default
@@ -72,7 +72,7 @@ const OurServices = () => {
     // load services from database in desktop view
     const loadService = async (e) => {
         try{
-            const servicesData = await fetch('/api/card/');
+            const servicesData = await fetch('https://beauti-saloon.herokuapp.com/services');
             const servicesJson = await servicesData.json();
             const filteredData =  servicesJson.filter(item => item.type === e.target.id)
             setServices(filteredData);
@@ -85,7 +85,7 @@ const OurServices = () => {
     // load services from database in mobile view
     const SelectServices =async (e)=>{
         try{
-            const servicesData = await fetch('http://localhost:6600/api/card/');
+            const servicesData = await fetch('https://beauti-saloon.herokuapp.com/services');
             const servicesJson = await servicesData.json();
             const filteredData =  servicesJson.filter(item => item.type === e.target.value)
             setServices(filteredData);
