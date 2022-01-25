@@ -1,5 +1,4 @@
 import "./index.css"
-import GoogleApiWrapper from '../Map/Map'
 
 
 const Directions = () => {

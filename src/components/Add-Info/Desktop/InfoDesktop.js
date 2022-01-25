@@ -20,10 +20,11 @@ const InfoDesktop = () => {
     const form = useRef()
     const formHandler =(e)=>{
         e.preventDefault()
+        
+        // return false
     }
     
   
-    
 
     const {orderDay  , orderMonth, orderHour , orderYear , price , time , title} = info.state
 
@@ -39,7 +40,7 @@ const InfoDesktop = () => {
                         <p className="info-subtitle">Tell us a bit about yourself</p>
 
                         
-                        <form onSubmit={formHandler} ref={form} className="info-form">
+                        <form onSubmit={(e) => formHandler(e)} ref={form} className="info-form">
                         <FormInputs />
 
                             {
@@ -54,8 +55,9 @@ const InfoDesktop = () => {
                                     
                                     <Coupon toggleCoupon={toggleCoupon}  openCoupon={openCoupon}/>
 
-                                    <button className="submit">
-                                        <Link to="/finish" state={info.state}>book it </Link>
+
+                                    <button className="submit" >
+                                        <Link to="/finish" onClick={() => console.log('form')} state={info.state}>book it </Link>
                                     </button>
 
                                     

@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.da8cdcc3.chunk.css",
+    "main.js": "/static/js/main.ebba13fd.chunk.js",
+    "main.js.map": "/static/js/main.ebba13fd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.01ed3692.js",
+    "runtime-main.js.map": "/static/js/runtime-main.01ed3692.js.map",
+    "static/js/2.b5dc8913.chunk.js": "/static/js/2.b5dc8913.chunk.js",
+    "static/js/2.b5dc8913.chunk.js.map": "/static/js/2.b5dc8913.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.da8cdcc3.chunk.css.map": "/static/css/main.da8cdcc3.chunk.css.map",
+    "static/js/2.b5dc8913.chunk.js.LICENSE.txt": "/static/js/2.b5dc8913.chunk.js.LICENSE.txt",
+    "static/media/app.css": "/static/media/nail-polish.4bae13db.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01ed3692.js",
+    "static/js/2.b5dc8913.chunk.js",
+    "static/css/main.da8cdcc3.chunk.css",
+    "static/js/main.ebba13fd.chunk.js"
+  ]
+}
