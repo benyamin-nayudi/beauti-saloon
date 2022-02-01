@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { setUserData } from "../store/services";
 
 const SingleService = ({ service }) => {
-  console.log(service);
+  const dispatch = useDispatch();
+
+  window.scrollTo(0, 0);
+
   return (
     <>
       <div className="services-section">
@@ -17,7 +22,7 @@ const SingleService = ({ service }) => {
           <Link
             to="/book"
             className="single-service-btn"
-            onClick={() => console.log(service._id)}
+            onClick={() => dispatch(setUserData(service))}
             state={service}
           >
             Book Now

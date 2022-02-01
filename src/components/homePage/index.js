@@ -2,44 +2,36 @@ import Banner from "./Banner";
 import Book from "./Book";
 import Services from "./Services";
 import WinterSpecials from "./WinterSpecials";
-import Testimonial from './Testimonial';
-import VisitUs from "./Visit-us";
+import Testimonial from "./Testimonial";
+import VisitUs from "./VisitUs";
 import SideNav from "./SideNav";
 import { useEffect } from "react";
 
-
 function HomePage() {
-
-  
-  useEffect(()=>{
+  useEffect(() => {
     const options = {
       root: null,
       rootMargin: "-100px",
-      threshold: .1
-    }
-    
-    const observer = new IntersectionObserver(entries=>{
-      entries.forEach((entry , observer)=>{
-        if(entry.intersectionRatio){
-          entry.target.classList.remove('unobserve')
-          entry.target.classList.add('observe')
+      threshold: 0.1,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, observer) => {
+        if (entry.intersectionRatio) {
+          entry.target.classList.remove("unobserve");
+          entry.target.classList.add("observe");
         }
-      })
-    } , options)
+      });
+    }, options);
 
-
-    document.querySelectorAll('.unobserve').forEach(el=>{
-      observer.observe(el)
-    })
-
-
-  },[])
-
-
+    document.querySelectorAll(".unobserve").forEach((el) => {
+      observer.observe(el);
+    });
+  }, []);
 
   return (
     <div>
-      <Banner /> 
+      <Banner />
       <SideNav />
       <Services />
       <WinterSpecials />
@@ -50,4 +42,4 @@ function HomePage() {
   );
 }
 
-export default HomePage ;
+export default HomePage;
