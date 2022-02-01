@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 import SingleService from "./SingleService";
 
 const OurServices = () => {
-  //get the data from homepage's link
+  //get the data from homepage's  link
   const location = useLocation();
 
   const [services, setServices] = useState([]);
