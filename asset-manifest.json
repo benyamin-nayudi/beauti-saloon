@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/beauti-saloon/static/css/main.2a28c517.chunk.css",
-    "main.js": "/beauti-saloon/static/js/main.42f5f645.chunk.js",
-    "main.js.map": "/beauti-saloon/static/js/main.42f5f645.chunk.js.map",
+    "main.js": "/beauti-saloon/static/js/main.e3d1c566.chunk.js",
+    "main.js.map": "/beauti-saloon/static/js/main.e3d1c566.chunk.js.map",
     "runtime-main.js": "/beauti-saloon/static/js/runtime-main.105018bc.js",
     "runtime-main.js.map": "/beauti-saloon/static/js/runtime-main.105018bc.js.map",
     "static/js/2.6bed3ea9.chunk.js": "/beauti-saloon/static/js/2.6bed3ea9.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.105018bc.js",
     "static/js/2.6bed3ea9.chunk.js",
     "static/css/main.2a28c517.chunk.css",
-    "static/js/main.42f5f645.chunk.js"
+    "static/js/main.e3d1c566.chunk.js"
   ]
 }
